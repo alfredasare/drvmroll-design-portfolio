@@ -3,13 +3,23 @@ import {portlandOrange, typeScale} from "../../utils";
 import {Link} from "react-router-dom";
 
 export const LandingFooter = styled.section`
-  width: 70%;
+  width: 80%;
   background: #23383B;
   display: flex;
   height: 200px;
   position: relative;
-  top: 16%;
+  top: 19%;
   padding-left: 25px;
+  
+  @media screen and (max-width: 480px) {
+    top: 5%;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    top: 4.5%;
+    width: 80%;
+  }
 `;
 
 export const LargeCircle = styled.div`
@@ -49,7 +59,12 @@ export const BrowseWorks = styled(Link)`
   margin-left: 30%;
   position: relative;
   white-space: nowrap;
-  color: ${portlandOrange[100]};
+  color: white;
+  transition: color 0.1s ease-in;
+  
+  &:hover {
+    color: ${portlandOrange[100]};
+  }
 
   &:before {
     content: '';
@@ -59,6 +74,11 @@ export const BrowseWorks = styled(Link)`
     height: 3em;
     top: -1em;
     left: -1em;
+  }
+  
+  @media screen and (max-width: 480px) {
+    font-size: ${typeScale.paragraph};
+    margin-left: 50%;
   }
 `;
 

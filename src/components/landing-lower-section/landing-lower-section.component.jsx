@@ -17,7 +17,7 @@ const LandingLowerSection = () => {
             <LargeCircle />
             <MediumCircle />
             <SmallCircle />
-            <BrowseWorks>
+            <BrowseWorks to="/works">
                 Browse works
             </BrowseWorks>
             <BlockOne />

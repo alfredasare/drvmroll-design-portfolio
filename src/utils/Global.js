@@ -9,7 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     html {
         font-size: 16px;
         box-sizing: border-box;
-        overflow-x; hidden;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
     
     *, *:before, *:after {
