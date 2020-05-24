@@ -28,7 +28,7 @@ export const LinkHoverStyles = css`
 export const FooterContainer = styled.footer`
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: space-between;
     color: ${neutral["500"]};
     padding: 15px;

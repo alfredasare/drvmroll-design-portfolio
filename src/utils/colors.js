@@ -1,3 +1,5 @@
+export const bgColor = "#eeece8";
+
 export const portlandOrange = {
     100: "#F2542D",
     200: "#D04324",

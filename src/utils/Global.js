@@ -1,6 +1,8 @@
 import {createGlobalStyle} from "styled-components";
 import {primaryFont} from "./typography";
 import {normalize} from 'polished';
+import {portlandOrange} from "./colors";
+
 
 export const GlobalStyle = createGlobalStyle`
     ${normalize()}
@@ -22,4 +24,10 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
+    
+    .active {
+        color: ${portlandOrange[100]}
+    }
+ 
+    
 `;
