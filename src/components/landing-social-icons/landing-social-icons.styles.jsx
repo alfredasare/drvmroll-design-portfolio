@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {typeScale} from "../../utils";
+import {portlandOrange, typeScale} from "../../utils";
 
 export const Social = styled.ul`
     position: absolute;
@@ -30,11 +30,10 @@ export const LandingSocialLinks = styled.li`
    list-style-type: none;
    cursor: pointer;
    font-size: ${typeScale.header3};
-   opacity: .8;
-   transition: color 0.3s ease-in;
+   transition: color 0.1s ease-in;
    
    &:hover {
-    opacity: 1.0;
+    color: ${portlandOrange[100]};
    }
 `;
 
