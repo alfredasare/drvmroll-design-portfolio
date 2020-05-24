@@ -15,7 +15,12 @@ export const QuoteText = styled.div`
     font-size: ${typeScale.header1};
     width: 80%;
     line-height: 1.5em;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    
+    @media screen and (max-width: 480px) {
+        font-size: ${typeScale.header3};
+        width: 100%;
+    }
     
       &::before {
         content: open-quote;

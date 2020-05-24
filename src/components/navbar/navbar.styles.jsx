@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {neutral, portlandOrange, typeScale} from "../../utils";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export const NavContainer = styled.nav`
     display: block;
@@ -55,8 +55,13 @@ export const DefaultNav = styled.div`
     }
 `;
 
-export const NavBrand = styled.div`
+export const NavBrand = styled(Link)`
     font-size: ${typeScale.header2};
+    color: ${neutral[600]};
+    
+    &:hover {
+        cursor: pointer;
+    };
 `;
 
 export const NavLinks = styled.div`

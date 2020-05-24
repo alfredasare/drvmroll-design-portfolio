@@ -16,7 +16,7 @@ function App() {
                 <Route exact path='/' component={Home}/>
                 {/*<Route exact path='/about' component={<></>}/>*/}
                 {/*<Route exact path='/contact' component={<></>}/>*/}
-                <Route path='/work' component={WorkDetails}/>
+                <Route path='/works' component={WorkDetails}/>
             </Switch>
             <Footer />
         </div>
