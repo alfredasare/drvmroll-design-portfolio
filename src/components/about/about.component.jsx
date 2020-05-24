@@ -15,7 +15,7 @@ import {typeScale} from "../../utils";
 const About = () => {
 
     return (
-        <AboutContainer>
+        <AboutContainer id="about">
             <AboutSectionOne>
                 <AboutHeader>
                     People behind Design Studios

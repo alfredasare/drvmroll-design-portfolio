@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './navbar.styles';
-import {DefaultNav, MobileNav, NavBrand, NavContainer, NavLinkItem, NavLinks} from "./navbar.styles";
+import {CustomNavLink, DefaultNav, MobileNav, NavBrand, NavContainer, NavLinkItem, NavLinks} from "./navbar.styles";
 import Burger from "../burger/burger.component";
 import Menu from "../menu/menu.component";
 
@@ -19,9 +19,9 @@ const NavBar = () => {
                 <NavBrand to="/">brand</NavBrand>
                 <NavLinks>
                     <NavLinkItem exact={true} activeClassName="active" to="/">Home</NavLinkItem>
-                    <NavLinkItem activeClassName="active" to="/about">About</NavLinkItem>
+                    <CustomNavLink href="/#about">About</CustomNavLink>
                     <NavLinkItem activeClassName="active" to="/works">Works</NavLinkItem>
-                    <NavLinkItem activeClassName="active" to="/contact">Contact</NavLinkItem>
+                    <CustomNavLink href="/#contact">About</CustomNavLink>
                 </NavLinks>
             </DefaultNav>
         </NavContainer>

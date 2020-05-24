@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {neutral, portlandOrange, typeScale} from "../../utils";
 import {Link, NavLink} from "react-router-dom";
 
@@ -68,8 +68,8 @@ export const NavLinks = styled.div`
     
 `;
 
-export const NavLinkItem = styled(NavLink)`
-    margin-right: 20px;
+const NavRules = css`
+  margin-right: 20px;
     margin-left: 20px;
     padding: 10px 5px;
     color: #333;
@@ -83,7 +83,6 @@ export const NavLinkItem = styled(NavLink)`
         height: 100%;
         width: 100%;
         background-color: ${neutral[500]};
-        // border-radius: 5px;
         opacity: 0;
         bottom: 0;
         transition: background-color 0.1s ease-in, left 0.1s ease-in;
@@ -99,6 +98,14 @@ export const NavLinkItem = styled(NavLink)`
         }
     }
 }
+`;
+
+export const NavLinkItem = styled(NavLink)`
+    ${NavRules};
+`;
+
+export const CustomNavLink = styled.a`
+    ${NavRules};
 `;
 
 // DESKTOP END
