@@ -6,19 +6,41 @@ export const LandingFooter = styled.section`
   width: 80%;
   background: #23383B;
   display: flex;
-  height: 200px;
+  height: 22vh;
   position: relative;
-  top: 19%;
+  top: 6%;
   padding-left: 25px;
   
-  @media screen and (max-width: 480px) {
-    top: 5%;
+  @media screen and (max-width: 360px) {
+    top: 0;
     width: 100%;
   }
   
-  @media screen and (max-width: 1200px) {
-    top: 4.5%;
-    width: 80%;
+  @media screen and (min-width: 361px) and (max-width: 550px) {
+    top: 8%;
+    height: 30vh;
+    width: 100%;
+  }
+  
+  //ipad pro
+  @media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+  }
+
+  @media screen and (min-width: 551px) and (max-width: 1200px) {
+    top: 10%;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 1201px){
+    top: 15%;
+  }
+  
+  @media screen and (min-width: 1400px){
+    
   }
 `;
 

@@ -7,7 +7,7 @@ const LoadingScreen = () => {
     return (
         <LoadingScreenContainer>
             <Loader>
-                LOADING...
+                L O A D I N G...
             </Loader>
         </LoadingScreenContainer>
     );
