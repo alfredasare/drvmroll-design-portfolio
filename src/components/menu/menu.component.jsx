@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledMenu } from './menu.styles';
 import {NavLink} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 const Menu = ({open, setOpen}) => {
 
@@ -11,15 +12,15 @@ const Menu = ({open, setOpen}) => {
         <NavLink to="/" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
             Home
         </NavLink>
-        <NavLink to="/" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
+        <HashLink to="/#about" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
             About
-        </NavLink>
-        <NavLink to="/works" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
+        </HashLink>
+        <HashLink to="/#works" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
             Works
-        </NavLink>
-        <NavLink to="/" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
+        </HashLink>
+        <HashLink to="/#contact" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
             Contact
-        </NavLink>
+        </HashLink>
     </StyledMenu>
 }
 export default Menu;

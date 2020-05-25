@@ -3,7 +3,7 @@ import {typeScale} from "../../utils";
 
 export const AboutContainer = styled.section`
   width: 100%;
-  padding: 50px;
+  padding: 30px 30px 60px 30px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;

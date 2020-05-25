@@ -28,10 +28,10 @@ export const LinkHoverStyles = css`
 export const FooterContainer = styled.footer`
     display: flex;
     width: 100%;
-    margin-top: 20px;
     justify-content: space-between;
     color: ${neutral["500"]};
-    padding: 15px;
+    padding: 30px;
+    background-color: ${neutral[200]};
     
     @media screen and (max-width: 480px) {
         display: flex;
@@ -42,7 +42,7 @@ export const FooterContainer = styled.footer`
 
 export const CopyRight = styled.div`
     max-width: 50%;
-    padding: 15px 0px;
+    padding: 15px 0;
     
     @media screen and (max-width: 480px) {
         max-width: 100%;
@@ -70,7 +70,7 @@ export const SocialLink = styled.a`
     ${LinkHoverStyles};
     
     @media screen and (max-width: 767px) {
-        margin-right: 0px;
+        margin-right: 0;
         padding-right: 15px;
         padding-left: 15px;
     };

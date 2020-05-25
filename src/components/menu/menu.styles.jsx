@@ -16,7 +16,7 @@ export const StyledMenu = styled.div`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out !important;
   
-  @media (max-width: 480px}) {
+  @media (max-width: 480px) {
     width: 100%;
   }
 
@@ -32,13 +32,13 @@ export const StyledMenu = styled.div`
     transition: color 0.3s linear;
     outline: none;
     
-    @media (max-width: 480px}) {
+    @media (max-width: 480px) {
       font-size: 1.5rem;
       text-align: center;
     }
 
     &:hover {
-      color: 'red';
+      color: white;
     }
   }
 `;

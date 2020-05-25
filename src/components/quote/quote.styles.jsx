@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import {bgColor, typeScale} from "../../utils";
+import {typeScale} from "../../utils";
 
 export const QuoteContainer = styled.section`
     width: 100%;
-    background-color: ${bgColor};
-    height: 300px;
-    padding: 50px 30px;
+    background-color: white;
+    height: 400px;
+    padding: 50px 30px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;

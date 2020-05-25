@@ -33,8 +33,8 @@ const About = () => {
 
                 </AboutParagraph>
                 <ButtonContainer>
-                    <Button textColor="white" backgroundColor="black" marginLeft="0">Works</Button>
-                    <Button textColor="black" backgroundColor={typeScale[100]} marginLeft="30px">Contact</Button>
+                    <Button as="a" href="/#works" textColor="white" backgroundColor="black" marginLeft="0">Works</Button>
+                    <Button as="a" href="/#contact" textColor="black" backgroundColor={typeScale[100]} marginLeft="30px">Contact</Button>
                 </ButtonContainer>
             </AboutSectionOne>
             <AboutSectionTwo/>

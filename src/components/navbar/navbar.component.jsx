@@ -19,9 +19,9 @@ const NavBar = () => {
                 <NavBrand to="/">brand</NavBrand>
                 <NavLinks>
                     <NavLinkItem exact={true} activeClassName="active" to="/">Home</NavLinkItem>
-                    <CustomNavLink href="/#about">About</CustomNavLink>
+                    <CustomNavLink to="/#about">About</CustomNavLink>
                     <NavLinkItem activeClassName="active" to="/works">Works</NavLinkItem>
-                    <CustomNavLink href="/#contact">About</CustomNavLink>
+                    <CustomNavLink to="/#contact">Contact</CustomNavLink>
                 </NavLinks>
             </DefaultNav>
         </NavContainer>

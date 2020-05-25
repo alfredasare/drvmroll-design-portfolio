@@ -1,15 +1,16 @@
 import styled, {css} from "styled-components";
 import {neutral, portlandOrange, typeScale} from "../../utils";
 import {Link, NavLink} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 export const NavContainer = styled.nav`
     display: block;
     height: 100px;
     width: 100%;
     position: fixed;
-    left: 0%;
-    top: 0%;
-    right: 0%;
+    left: 0;
+    top: 0;
+    right: 0;
     bottom: auto;
     z-index: 10;
     background-color: ${neutral[200]};
@@ -104,7 +105,7 @@ export const NavLinkItem = styled(NavLink)`
     ${NavRules};
 `;
 
-export const CustomNavLink = styled.a`
+export const CustomNavLink = styled(HashLink)`
     ${NavRules};
 `;
 

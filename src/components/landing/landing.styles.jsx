@@ -3,9 +3,16 @@ import {typeScale} from "../../utils";
 
 export const HeaderContainer = styled.header`
     height: 100vh;
+    margin-bottom: 5em;
     
     @media screen and (max-width: 480px) {
-      margin-bottom: 5em;
+      margin-bottom: 0;
+      height: 90vh;
+    }
+    
+    @media screen and (max-width: 360px) {
+      margin-bottom: 7em;
+      height: 90vh;
     }
     
     @media screen and (width: 1024px) and (height: 1366px) {

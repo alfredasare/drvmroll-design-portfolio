@@ -5,7 +5,7 @@ export const ButtonStyles = styled.button`
   border-radius: 0;
   border: none;
   font-size: ${typeScale.header4};
-  padding: 10px 30px;
+  padding: ${({padding}) => padding ? padding : "10px 30px"};
   color: ${({textColor}) => textColor};
   background-color: ${({backgroundColor}) => backgroundColor};
   margin-left: ${({marginLeft}) => marginLeft};
