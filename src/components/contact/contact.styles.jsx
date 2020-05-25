@@ -32,6 +32,11 @@ export const WorkTogetherHead = styled.h1`
 export const WorkText = styled.p`
   font-size: ${typeScale.paragraph};
   margin-bottom: 40px;
+  
+  
+  @media screen and (min-width: 550px) and (max-width: 1200px){
+    width: 80%;
+  }
 `;
 
 export const Address = styled.div`

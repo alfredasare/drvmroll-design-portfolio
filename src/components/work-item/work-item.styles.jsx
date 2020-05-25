@@ -8,11 +8,16 @@ export const WorkItemContainer = styled.div`
   height: 100%;
   margin-bottom: 5em;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 0;
   grid-template-columns: 2fr 1fr;
+  
+  @media screen and (max-width: 1300px) {
+    grid-gap: 3em;
+  }
   
   @media screen and (max-width: 550px) {
     grid-template-columns: 1fr;
+    grid-gap: 3em;
   }
 `;
 
@@ -20,12 +25,16 @@ export const WorkItemImage = styled.div`
   height: 400px;
   border-radius: 10px;
   cursor: pointer;
-  width: 80%;
+  width: 50%;
   margin: auto;
   background-image: ${({coverImage}) => `url(${coverImage})`};
   background-size: cover;                      
   background-repeat: no-repeat;
   background-position: center center;
+  
+  @media screen and (max-width: 1300px) {
+    width: 80%;
+  }
   
   @media screen and (max-width: 550px) {
     height: 400px;
@@ -51,7 +60,7 @@ export const WorkItemText = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 100%;
         margin: 0 auto;
-        font-size: ${typeScale.header4};
+        font-size: ${typeScale.header5};
         line-height: 1.3em;
   }
 `;
