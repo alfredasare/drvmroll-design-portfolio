@@ -6,6 +6,7 @@ import NavBar from "./components/navbar/navbar.component";
 import Footer from "./components/footer/footer.component";
 import LoadingScreen from "./components/loading-screen/loading-screen.component";
 import Contact from "./components/contact/contact.component";
+import ScrollToTop from "./utils/scroll-to-top";
 
 const Home = lazy(() => import("./pages/home/home.component"));
 const WorkDetails = lazy(() => import("./pages/work-details/work-details.component"));
@@ -16,8 +17,8 @@ function App() {
             <GlobalStyle/>
             <Suspense fallback={<LoadingScreen/>}>
                 <NavBar/>
+                <ScrollToTop/>
                 <Switch>
-
                     <Route exact path='/' component={Home}/>
                     <Route path='/works' component={WorkDetails}/>
                 </Switch>

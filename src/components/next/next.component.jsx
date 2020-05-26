@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import {NextContainer, NextProject, Title} from "./next.style";
 import PortfolioContext from "../../contexts/portfolio.context";
 

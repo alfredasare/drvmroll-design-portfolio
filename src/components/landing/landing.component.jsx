@@ -9,7 +9,7 @@ import LandingLowerSection from "../landing-lower-section/landing-lower-section.
 const Landing = () => {
 
     return (
-        <HeaderContainer>
+        <HeaderContainer id="home">
             <LandingSocialIcons />
             <LandingMainBg />
             <MainContent>

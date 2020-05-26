@@ -11,14 +11,14 @@ const NavBar = () => {
     return (
         <NavContainer>
             <MobileNav>
-                <NavBrand to="/">brand</NavBrand>
+                <NavBrand to="/#home">brand</NavBrand>
                 <Burger open={open} setOpen={setOpen}/>
                 <Menu open={open} setOpen={setOpen}/>
             </MobileNav>
             <DefaultNav>
-                <NavBrand to="/">brand</NavBrand>
+                <NavBrand to="/#home">brand</NavBrand>
                 <NavLinks>
-                    <NavLinkItem exact={true} activeClassName="active" to="/">Home</NavLinkItem>
+                    <NavLinkItem exact={true} activeClassName="active" to="/#home">Home</NavLinkItem>
                     <CustomNavLink to="/#about">About</CustomNavLink>
                     <CustomNavLink to="/#works">Works</CustomNavLink>
                     <CustomNavLink to="/#contact">Contact</CustomNavLink>

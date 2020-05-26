@@ -9,7 +9,7 @@ const Menu = ({open, setOpen}) => {
     const tabIndex = isHidden ? 0 : -1;
 
     return <StyledMenu open={open} aria-hidden={!isHidden}>
-        <NavLink to="/" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
+        <NavLink to="/#home" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
             Home
         </NavLink>
         <HashLink to="/#about" tabIndex={tabIndex} onClick={() => setOpen(!open)}>
