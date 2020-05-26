@@ -22,7 +22,7 @@ const Footer = () => {
             <FooterLinks>
                 <SocialLink href="/#" target="_blank" rel="noreferrer">
                     <SocialIcon>
-                        <i className="fa fa-facebook" aria-hidden="true"/>
+                        <i className="fab fa-facebook-f" aria-hidden="true"/>
                     </SocialIcon>
                     <SocialText>
                         Facebook
@@ -30,7 +30,7 @@ const Footer = () => {
                 </SocialLink>
                 <SocialLink href="/#" target="_blank" rel="noreferrer">
                     <SocialIcon>
-                        <i className="fa fa-instagram" aria-hidden="true"/>
+                        <i className="fab fa-instagram" aria-hidden="true"/>
                     </SocialIcon>
                     <SocialText>
                         Instagram
@@ -38,7 +38,7 @@ const Footer = () => {
                 </SocialLink>
                 <SocialLink href="/#" target="_blank" rel="noreferrer">
                     <SocialIcon>
-                        <i className="fa fa-twitter" aria-hidden="true"/>
+                        <i className="fab fa-twitter" aria-hidden="true"/>
                     </SocialIcon>
                     <SocialText>
                         Twitter
@@ -46,7 +46,7 @@ const Footer = () => {
                 </SocialLink>
                 <SocialLink href="/#" target="_blank" rel="noreferrer">
                     <SocialIcon>
-                        <i className="fa fa-behance" aria-hidden="true"/>
+                        <i className="fab fa-behance" aria-hidden="true"/>
                     </SocialIcon>
                     <SocialText>
                         Behance

@@ -1,6 +1,14 @@
 import React from "react";
 import './work-item.styles';
-import {ViewLink, WorkCategory, WorkItemContainer, WorkItemImage, WorkItemText} from "./work-item.styles";
+import {
+    ViewLink,
+    WorkCategory,
+    WorkItemContainer,
+    WorkItemImage,
+    WorkItemImageContainer,
+    WorkItemText
+} from "./work-item.styles";
+import {Link} from "react-router-dom";
 
 const WorkItem = ({projectCategory, projectInfo, url, projectResources}) => {
 
@@ -8,7 +16,9 @@ const WorkItem = ({projectCategory, projectInfo, url, projectResources}) => {
 
     return (
         <WorkItemContainer>
-            <WorkItemImage coverImage={coverImage}/>
+            <WorkItemImageContainer>
+                <Link to={url}><WorkItemImage coverImage={coverImage}/></Link>
+            </WorkItemImageContainer>
             <WorkItemText>
                 <WorkCategory>
                     {projectCategory}
