@@ -14,6 +14,7 @@ export const ContactContainer = styled.section`
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    text-align: center;
   }
 `;
 

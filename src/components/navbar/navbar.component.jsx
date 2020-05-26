@@ -20,7 +20,7 @@ const NavBar = () => {
                 <NavLinks>
                     <NavLinkItem exact={true} activeClassName="active" to="/">Home</NavLinkItem>
                     <CustomNavLink to="/#about">About</CustomNavLink>
-                    <NavLinkItem activeClassName="active" to="/works">Works</NavLinkItem>
+                    <CustomNavLink to="/#works">Works</CustomNavLink>
                     <CustomNavLink to="/#contact">Contact</CustomNavLink>
                 </NavLinks>
             </DefaultNav>

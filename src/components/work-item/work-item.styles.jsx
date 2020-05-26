@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {neutral, typeScale} from "../../utils";
+import {neutral, portlandOrange, typeScale} from "../../utils";
 import {Link} from "react-router-dom";
 import {LinkHoverStyles} from "../footer/footer.styles";
 
@@ -21,16 +21,19 @@ export const WorkItemContainer = styled.div`
   }
 `;
 
-export const WorkItemImage = styled.div`
+export const WorkItemImageContainer = styled.div`
   height: 400px;
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
   margin: auto;
-  background-image: ${({coverImage}) => `url(${coverImage})`};
-  background-size: cover;                      
-  background-repeat: no-repeat;
-  background-position: center center;
+  overflow: hidden;
+  position: relative;
+
+  
+  &:hover{
+    filter: grayscale(0.7);
+  }
   
   @media screen and (max-width: 1300px) {
     width: 80%;
@@ -41,6 +44,57 @@ export const WorkItemImage = styled.div`
     width: 100%;
     margin: auto;
     background-color: #333;
+  }
+`;
+
+export const WorkItemImage = styled.div`
+  background-image: ${({coverImage}) => `url(${coverImage})`};
+  background-size: cover;                      
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+  
+  @keyframes move-right{
+    0%{
+    transform: translateX(-50px);
+    }
+    100%{
+    transform: translateX(0);
+    background-color: ${portlandOrange[100]};
+    }
+  }
+    
+  &:hover{
+    transform: scale(1.2);
+    &::before{
+      content: 'View work';
+      position: absolute;
+      width: 124px;
+      font-size: 1.3rem;
+      text-align: center;
+      top: 50%;
+      left: calc(50% - 62px);
+      z-index: 5;
+      color: white;
+      font-weight: 800;   
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        top: 58%;
+        left: calc(50%);
+        z-index: 5;
+        background: white;
+        display: inline-block;
+        animation: move-right;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }  
   }
 `;
 

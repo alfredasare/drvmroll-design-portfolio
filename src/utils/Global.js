@@ -29,6 +29,5 @@ export const GlobalStyle = createGlobalStyle`
     .active {
         color: ${portlandOrange[100]}
     }
- 
     
 `;

@@ -114,10 +114,10 @@ const Block = css`
 export const BlockOne = styled.div`
   ${Block};
   right: 2em;
-`
+`;
 
 export const BlockTwo = styled.div`
   ${Block};
   right: 0;
   top: 2em;
-`
+`;
