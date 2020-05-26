@@ -15,6 +15,7 @@ export const HeaderContainer = styled.section`
 
 export const ProjectName = styled.h1`
   font-size: 3rem;
+  margin-top: 0;
 `;
 
 export const SubHeader = styled.div`
